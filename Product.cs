@@ -9,6 +9,7 @@ namespace sqlconn
 {
     internal class Product
     {
+        static private List<Product> productList =new List<Product>();
         public double NUMBER { get; set; }
         public string DATE { get; set; }
         public double PRICE { get; set; }
@@ -18,7 +19,14 @@ namespace sqlconn
 
         public void add()
         {
-            MessageBox.Show("Added");
+            //MessageBox.Show("Added");
+            productList.Add(this);
+        }
+
+        static public List<Product> GetAllProducts()
+        {
+            return productList;
+
         }
     }
 }

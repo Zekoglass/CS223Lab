@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Add = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
             this.n = new System.Windows.Forms.Label();
@@ -42,6 +43,10 @@
             this.Counttt = new System.Windows.Forms.TextBox();
             this.priceee = new System.Windows.Forms.TextBox();
             this.dateee = new System.Windows.Forms.DateTimePicker();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.dgview = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgview)).BeginInit();
             this.SuspendLayout();
             // 
             // Add
@@ -168,11 +173,25 @@
             this.dateee.Size = new System.Drawing.Size(200, 20);
             this.dateee.TabIndex = 13;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // dgview
+            // 
+            this.dgview.AccessibleName = "";
+            this.dgview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgview.Location = new System.Drawing.Point(120, 451);
+            this.dgview.Name = "dgview";
+            this.dgview.Size = new System.Drawing.Size(668, 228);
+            this.dgview.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(803, 707);
+            this.Controls.Add(this.dgview);
             this.Controls.Add(this.dateee);
             this.Controls.Add(this.priceee);
             this.Controls.Add(this.Counttt);
@@ -189,6 +208,8 @@
             this.Controls.Add(this.Add);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,6 +231,8 @@
         private System.Windows.Forms.TextBox Counttt;
         private System.Windows.Forms.TextBox priceee;
         private System.Windows.Forms.DateTimePicker dateee;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.DataGridView dgview;
     }
 }
 
