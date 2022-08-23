@@ -11,11 +11,13 @@ namespace sqlconn
     {
         static private List<Product> productList =new List<Product>();
         public double NUMBER { get; set; }
-        public string DATE { get; set; }
+        public DateTime DATE { get; set; }
         public double PRICE { get; set; }
         public double INVO_NUM { get; set; }
         public double COUNT { get; set; }
         public string OBJ_NAME { get; set; }
+        public bool isAvailable { get; set; }
+        public string ProductType { get; set; }
 
         public void add()
         {

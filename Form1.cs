@@ -11,6 +11,11 @@ namespace sqlconn
         {
             InitializeComponent();
         }
+        public Form1(string NAME)
+        {
+            InitializeComponent();
+            current_user.Text = NAME;
+        }
 
         private void Add_Click(object sender, EventArgs e)
         {
@@ -18,15 +23,20 @@ namespace sqlconn
             p.NUMBER = Convert.ToInt32(numberrr.Text);
             p.INVO_NUM = Convert.ToInt32(inv_numberrr.Text);
             p.OBJ_NAME = obj_nameee.Text;
-            p.DATE = dateee.Text;
+            p.DATE = dateee.Value;
             p.PRICE = Convert.ToDouble(priceee.Text);
             p.COUNT = Convert.ToInt32(Counttt.Text);
+            p.isAvailable = cBisAva.Checked;
+
+            
+
+
             p.add();
 
 
             Regex A = new Regex(@"^[a-z]||[A-Z] {10}$");
             Regex B = new Regex(@"[0-9]{5}$");
-
+            bool allFieldsAreCorrect = true;
 
             if (string.IsNullOrEmpty(numberrr.Text))
             {
@@ -95,7 +105,7 @@ namespace sqlconn
                 {
                     errorProvider1.Clear();
                     p.add();
-                    MessageBox.Show("Sucessfully Added");
+                    //MessageBox.Show("Sucessfully Added");
                     dgview.DataSource = null;
                     dgview.DataSource = Product.GetAllProducts();
                 }
@@ -105,11 +115,39 @@ namespace sqlconn
                 MessageBox.Show("Invalid Price  ! ");
             }
 
+
+            p.isAvailable = cBisAva.Checked;
+
+            if (rbsimple.Checked == false && rbvariable.Checked == false)
+            {
+                allFieldsAreCorrect = false;
+                errorProvider1.SetError(gBoxPType, "One of the radio buttons should be selected.");
+
+            }
+
+
+            p.ProductType = (rbvariable.Checked == true) ? "Variable" : "Simple";
+
+            if (allFieldsAreCorrect == true)
+            {
+                p.add();
+                dgview.DataSource = null;
+                dgview.DataSource = Product.GetAllProducts();
+            }
+
+
+
+
         }
 
         private void Cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

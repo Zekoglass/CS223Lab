@@ -45,8 +45,18 @@
             this.dateee = new System.Windows.Forms.DateTimePicker();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.dgview = new System.Windows.Forms.DataGridView();
+            this.cLBProductC = new System.Windows.Forms.CheckedListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.gBoxPType = new System.Windows.Forms.GroupBox();
+            this.rbvariable = new System.Windows.Forms.RadioButton();
+            this.rbsimple = new System.Windows.Forms.RadioButton();
+            this.cBisAva = new System.Windows.Forms.CheckBox();
+            this.gBoxAva = new System.Windows.Forms.GroupBox();
+            this.current_user = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgview)).BeginInit();
+            this.gBoxPType.SuspendLayout();
+            this.gBoxAva.SuspendLayout();
             this.SuspendLayout();
             // 
             // Add
@@ -181,16 +191,108 @@
             // 
             this.dgview.AccessibleName = "";
             this.dgview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgview.Location = new System.Drawing.Point(120, 451);
+            this.dgview.Location = new System.Drawing.Point(15, 451);
             this.dgview.Name = "dgview";
-            this.dgview.Size = new System.Drawing.Size(668, 228);
+            this.dgview.Size = new System.Drawing.Size(940, 228);
             this.dgview.TabIndex = 14;
+            // 
+            // cLBProductC
+            // 
+            this.cLBProductC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cLBProductC.FormattingEnabled = true;
+            this.cLBProductC.Items.AddRange(new object[] {
+            "FOOD"});
+            this.cLBProductC.Location = new System.Drawing.Point(612, 190);
+            this.cLBProductC.Name = "cLBProductC";
+            this.cLBProductC.Size = new System.Drawing.Size(96, 64);
+            this.cLBProductC.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(598, 171);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 16);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Product Catagory";
+            // 
+            // gBoxPType
+            // 
+            this.gBoxPType.Controls.Add(this.rbsimple);
+            this.gBoxPType.Controls.Add(this.rbvariable);
+            this.gBoxPType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gBoxPType.Location = new System.Drawing.Point(770, 277);
+            this.gBoxPType.Name = "gBoxPType";
+            this.gBoxPType.Size = new System.Drawing.Size(144, 100);
+            this.gBoxPType.TabIndex = 17;
+            this.gBoxPType.TabStop = false;
+            this.gBoxPType.Text = "Product Type";
+            this.gBoxPType.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // rbvariable
+            // 
+            this.rbvariable.AutoSize = true;
+            this.rbvariable.Location = new System.Drawing.Point(9, 32);
+            this.rbvariable.Name = "rbvariable";
+            this.rbvariable.Size = new System.Drawing.Size(84, 20);
+            this.rbvariable.TabIndex = 0;
+            this.rbvariable.TabStop = true;
+            this.rbvariable.Text = "Variable";
+            this.rbvariable.UseVisualStyleBackColor = true;
+            // 
+            // rbsimple
+            // 
+            this.rbsimple.AutoSize = true;
+            this.rbsimple.Location = new System.Drawing.Point(8, 56);
+            this.rbsimple.Name = "rbsimple";
+            this.rbsimple.Size = new System.Drawing.Size(71, 20);
+            this.rbsimple.TabIndex = 1;
+            this.rbsimple.TabStop = true;
+            this.rbsimple.Text = "simple";
+            this.rbsimple.UseVisualStyleBackColor = true;
+            // 
+            // cBisAva
+            // 
+            this.cBisAva.AutoSize = true;
+            this.cBisAva.Location = new System.Drawing.Point(6, 33);
+            this.cBisAva.Name = "cBisAva";
+            this.cBisAva.Size = new System.Drawing.Size(108, 20);
+            this.cBisAva.TabIndex = 18;
+            this.cBisAva.Text = "Is Available";
+            this.cBisAva.UseVisualStyleBackColor = true;
+            // 
+            // gBoxAva
+            // 
+            this.gBoxAva.Controls.Add(this.cBisAva);
+            this.gBoxAva.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gBoxAva.Location = new System.Drawing.Point(770, 157);
+            this.gBoxAva.Name = "gBoxAva";
+            this.gBoxAva.Size = new System.Drawing.Size(148, 97);
+            this.gBoxAva.TabIndex = 19;
+            this.gBoxAva.TabStop = false;
+            this.gBoxAva.Text = "Availability";
+            // 
+            // current_user
+            // 
+            this.current_user.AutoSize = true;
+            this.current_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.current_user.Location = new System.Drawing.Point(12, 9);
+            this.current_user.Name = "current_user";
+            this.current_user.Size = new System.Drawing.Size(92, 16);
+            this.current_user.TabIndex = 20;
+            this.current_user.Text = "current_user";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 707);
+            this.ClientSize = new System.Drawing.Size(967, 695);
+            this.Controls.Add(this.current_user);
+            this.Controls.Add(this.gBoxAva);
+            this.Controls.Add(this.gBoxPType);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cLBProductC);
             this.Controls.Add(this.dgview);
             this.Controls.Add(this.dateee);
             this.Controls.Add(this.priceee);
@@ -210,6 +312,10 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgview)).EndInit();
+            this.gBoxPType.ResumeLayout(false);
+            this.gBoxPType.PerformLayout();
+            this.gBoxAva.ResumeLayout(false);
+            this.gBoxAva.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,6 +339,14 @@
         private System.Windows.Forms.DateTimePicker dateee;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.DataGridView dgview;
+        private System.Windows.Forms.GroupBox gBoxPType;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckedListBox cLBProductC;
+        private System.Windows.Forms.GroupBox gBoxAva;
+        private System.Windows.Forms.CheckBox cBisAva;
+        private System.Windows.Forms.RadioButton rbsimple;
+        private System.Windows.Forms.RadioButton rbvariable;
+        private System.Windows.Forms.Label current_user;
     }
 }
 
