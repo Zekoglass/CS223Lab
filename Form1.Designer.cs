@@ -48,8 +48,8 @@
             this.cLBProductC = new System.Windows.Forms.CheckedListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gBoxPType = new System.Windows.Forms.GroupBox();
-            this.rbvariable = new System.Windows.Forms.RadioButton();
             this.rbsimple = new System.Windows.Forms.RadioButton();
+            this.rbvariable = new System.Windows.Forms.RadioButton();
             this.cBisAva = new System.Windows.Forms.CheckBox();
             this.gBoxAva = new System.Windows.Forms.GroupBox();
             this.current_user = new System.Windows.Forms.Label();
@@ -201,10 +201,12 @@
             this.cLBProductC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cLBProductC.FormattingEnabled = true;
             this.cLBProductC.Items.AddRange(new object[] {
-            "FOOD"});
-            this.cLBProductC.Location = new System.Drawing.Point(612, 190);
+            "FOOD",
+            "ELECTRONICS",
+            "TOYS"});
+            this.cLBProductC.Location = new System.Drawing.Point(601, 190);
             this.cLBProductC.Name = "cLBProductC";
-            this.cLBProductC.Size = new System.Drawing.Size(96, 64);
+            this.cLBProductC.Size = new System.Drawing.Size(116, 64);
             this.cLBProductC.TabIndex = 15;
             // 
             // label1
@@ -230,17 +232,6 @@
             this.gBoxPType.Text = "Product Type";
             this.gBoxPType.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // rbvariable
-            // 
-            this.rbvariable.AutoSize = true;
-            this.rbvariable.Location = new System.Drawing.Point(9, 32);
-            this.rbvariable.Name = "rbvariable";
-            this.rbvariable.Size = new System.Drawing.Size(84, 20);
-            this.rbvariable.TabIndex = 0;
-            this.rbvariable.TabStop = true;
-            this.rbvariable.Text = "Variable";
-            this.rbvariable.UseVisualStyleBackColor = true;
-            // 
             // rbsimple
             // 
             this.rbsimple.AutoSize = true;
@@ -251,6 +242,17 @@
             this.rbsimple.TabStop = true;
             this.rbsimple.Text = "simple";
             this.rbsimple.UseVisualStyleBackColor = true;
+            // 
+            // rbvariable
+            // 
+            this.rbvariable.AutoSize = true;
+            this.rbvariable.Location = new System.Drawing.Point(9, 32);
+            this.rbvariable.Name = "rbvariable";
+            this.rbvariable.Size = new System.Drawing.Size(84, 20);
+            this.rbvariable.TabIndex = 0;
+            this.rbvariable.TabStop = true;
+            this.rbvariable.Text = "Variable";
+            this.rbvariable.UseVisualStyleBackColor = true;
             // 
             // cBisAva
             // 

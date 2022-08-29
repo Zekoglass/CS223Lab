@@ -12,6 +12,7 @@ namespace sqlconn
 {
     public partial class Login : Form
     {
+
         public Login()
         {
             InitializeComponent();
@@ -25,7 +26,8 @@ namespace sqlconn
             if ((this.uName.Text == "Admin") && (this.pWord.Text == "Admin"))
             {
                 this.Hide();
-                Form1 form = new Form1(Email);
+                Main form = new Main(Email);
+                // Form1 form = new Form1(Email);
                 //MessageBox.Show("you are granted access");
                 form.ShowDialog();
 

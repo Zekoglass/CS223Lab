@@ -18,17 +18,26 @@ namespace sqlconn
         public string OBJ_NAME { get; set; }
         public bool isAvailable { get; set; }
         public string ProductType { get; set; }
+        public List<int> catagory { get; set; } = new List<int>();
+
 
         public void add()
         {
-            //MessageBox.Show("Added");
             productList.Add(this);
+            //MessageBox.Show("Added");
+
         }
 
         static public List<Product> GetAllProducts()
         {
             return productList;
 
+        }
+        public static Product findOne(string name)
+        {
+            
+            return productList.Find(P => P.OBJ_NAME.ToLower() == name.ToLower());
+            //ToLower() is used to make case insensative search. 
         }
     }
 }
