@@ -47,5 +47,10 @@ namespace sqlconn
             form.MdiParent = this;
             form.Show();
         }
+
+        private void catagoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

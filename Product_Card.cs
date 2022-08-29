@@ -23,7 +23,7 @@ namespace sqlconn
         public string Productname
         {
             get { return _Productname; }
-            set { _Productname = value; Name_label.Text += value; }
+            set { _Productname = value; Name_label.Text +=":     "+ value; }
         }
 
         private string _ProductDescription;
@@ -31,7 +31,7 @@ namespace sqlconn
         public string ProductDescription
         {
             get { return _ProductDescription; }
-            set { _ProductDescription = value; dESC_label.Text += value; }
+            set { _ProductDescription = value; dESC_label.Text += ":     " + value; }
         }
 
         private string _ProductPrice;
@@ -39,7 +39,7 @@ namespace sqlconn
         public string ProductPrice
         {
             get { return _ProductPrice; }
-            set { _ProductPrice = value; Price_label.Text += value; }
+            set { _ProductPrice = value; Price_label.Text += ":     " + value; }
         }
 
 

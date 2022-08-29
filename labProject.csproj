@@ -71,6 +71,12 @@
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Product.cs" />
+    <Compile Include="productDescription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="productDescription.Designer.cs">
+      <DependentUpon>productDescription.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product_Card.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productDescription.resx">
+      <DependentUpon>productDescription.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Product_Card.resx">
       <DependentUpon>Product_Card.cs</DependentUpon>

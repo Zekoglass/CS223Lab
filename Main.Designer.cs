@@ -30,9 +30,9 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.productToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.catagoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.catagoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,12 +56,6 @@
             this.productToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.productToolStripMenuItem.Text = "Product";
             // 
-            // catagoryToolStripMenuItem
-            // 
-            this.catagoryToolStripMenuItem.Name = "catagoryToolStripMenuItem";
-            this.catagoryToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.catagoryToolStripMenuItem.Text = "Catagory";
-            // 
             // addProductToolStripMenuItem
             // 
             this.addProductToolStripMenuItem.Name = "addProductToolStripMenuItem";
@@ -75,6 +69,13 @@
             this.searchProductToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.searchProductToolStripMenuItem.Text = "Search Product";
             this.searchProductToolStripMenuItem.Click += new System.EventHandler(this.searchProductToolStripMenuItem_Click);
+            // 
+            // catagoryToolStripMenuItem
+            // 
+            this.catagoryToolStripMenuItem.Name = "catagoryToolStripMenuItem";
+            this.catagoryToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.catagoryToolStripMenuItem.Text = "Catagory";
+            this.catagoryToolStripMenuItem.Click += new System.EventHandler(this.catagoryToolStripMenuItem_Click);
             // 
             // Main
             // 

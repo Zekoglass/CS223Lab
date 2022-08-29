@@ -62,7 +62,7 @@
             // Add
             // 
             this.Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add.Location = new System.Drawing.Point(289, 390);
+            this.Add.Location = new System.Drawing.Point(151, 347);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(75, 34);
             this.Add.TabIndex = 0;
@@ -73,7 +73,7 @@
             // Cancel
             // 
             this.Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cancel.Location = new System.Drawing.Point(422, 390);
+            this.Cancel.Location = new System.Drawing.Point(337, 342);
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(107, 34);
             this.Cancel.TabIndex = 1;
@@ -105,7 +105,7 @@
             // 
             this.I.AutoSize = true;
             this.I.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.I.Location = new System.Drawing.Point(609, 51);
+            this.I.Location = new System.Drawing.Point(333, 157);
             this.I.Name = "I";
             this.I.Size = new System.Drawing.Size(150, 20);
             this.I.TabIndex = 4;
@@ -150,9 +150,9 @@
             // 
             // inv_numberrr
             // 
-            this.inv_numberrr.Location = new System.Drawing.Point(612, 84);
+            this.inv_numberrr.Location = new System.Drawing.Point(338, 190);
             this.inv_numberrr.Name = "inv_numberrr";
-            this.inv_numberrr.Size = new System.Drawing.Size(176, 20);
+            this.inv_numberrr.Size = new System.Drawing.Size(200, 20);
             this.inv_numberrr.TabIndex = 9;
             // 
             // obj_nameee
@@ -173,7 +173,7 @@
             // 
             this.priceee.Location = new System.Drawing.Point(337, 291);
             this.priceee.Name = "priceee";
-            this.priceee.Size = new System.Drawing.Size(176, 20);
+            this.priceee.Size = new System.Drawing.Size(201, 20);
             this.priceee.TabIndex = 12;
             // 
             // dateee
@@ -191,9 +191,9 @@
             // 
             this.dgview.AccessibleName = "";
             this.dgview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgview.Location = new System.Drawing.Point(15, 451);
+            this.dgview.Location = new System.Drawing.Point(50, 387);
             this.dgview.Name = "dgview";
-            this.dgview.Size = new System.Drawing.Size(940, 228);
+            this.dgview.Size = new System.Drawing.Size(488, 163);
             this.dgview.TabIndex = 14;
             // 
             // cLBProductC
@@ -204,7 +204,7 @@
             "FOOD",
             "ELECTRONICS",
             "TOYS"});
-            this.cLBProductC.Location = new System.Drawing.Point(601, 190);
+            this.cLBProductC.Location = new System.Drawing.Point(594, 70);
             this.cLBProductC.Name = "cLBProductC";
             this.cLBProductC.Size = new System.Drawing.Size(116, 64);
             this.cLBProductC.TabIndex = 15;
@@ -213,7 +213,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(598, 171);
+            this.label1.Location = new System.Drawing.Point(590, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 16);
             this.label1.TabIndex = 16;
@@ -224,7 +224,7 @@
             this.gBoxPType.Controls.Add(this.rbsimple);
             this.gBoxPType.Controls.Add(this.rbvariable);
             this.gBoxPType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gBoxPType.Location = new System.Drawing.Point(770, 277);
+            this.gBoxPType.Location = new System.Drawing.Point(593, 291);
             this.gBoxPType.Name = "gBoxPType";
             this.gBoxPType.Size = new System.Drawing.Size(144, 100);
             this.gBoxPType.TabIndex = 17;
@@ -257,7 +257,7 @@
             // cBisAva
             // 
             this.cBisAva.AutoSize = true;
-            this.cBisAva.Location = new System.Drawing.Point(6, 33);
+            this.cBisAva.Location = new System.Drawing.Point(9, 33);
             this.cBisAva.Name = "cBisAva";
             this.cBisAva.Size = new System.Drawing.Size(108, 20);
             this.cBisAva.TabIndex = 18;
@@ -268,7 +268,7 @@
             // 
             this.gBoxAva.Controls.Add(this.cBisAva);
             this.gBoxAva.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gBoxAva.Location = new System.Drawing.Point(770, 157);
+            this.gBoxAva.Location = new System.Drawing.Point(594, 157);
             this.gBoxAva.Name = "gBoxAva";
             this.gBoxAva.Size = new System.Drawing.Size(148, 97);
             this.gBoxAva.TabIndex = 19;
@@ -289,7 +289,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(967, 695);
+            this.ClientSize = new System.Drawing.Size(751, 557);
             this.Controls.Add(this.current_user);
             this.Controls.Add(this.gBoxAva);
             this.Controls.Add(this.gBoxPType);

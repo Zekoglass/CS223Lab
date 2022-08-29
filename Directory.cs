@@ -19,8 +19,20 @@ namespace sqlconn
 
         private void button1_Click(object sender, EventArgs e)
         {
-            panel_Mid.BackColor = Color.Aquamarine;
+            panel_Mid.BackColor = Color.Thistle;
             Indicater_panel.Location = new Point(Indicater_panel.Location.X, 109);
+
+
+            if (this.PList_flowLayoutPanel.Controls.Count > 0)
+                this.PList_flowLayoutPanel.Controls.RemoveAt(0);
+
+            Form1 product = new Form1();
+            product.TopLevel = false;
+            this.PList_flowLayoutPanel.Controls.Add(product);
+            this.PList_flowLayoutPanel.Tag = product;
+            product.Show();
+
+
 
         }
 
@@ -66,12 +78,34 @@ namespace sqlconn
                 card.ProductPrice =Convert.ToString(item.PRICE);
                 PList_flowLayoutPanel.Controls.Add(card);
                 card.Show();
+
+
+                card.DoubleClick += (object sender1, EventArgs ee) =>
+                {
+                    this.PList_flowLayoutPanel.Controls.Clear();
+
+                    productDescription description = new productDescription();
+                    description.ProductObjName = item.OBJ_NAME;
+                    description.ProductNumber = item.NUMBER;
+                    description.ProductInvNum = item.INVO_NUM;
+                    description.ProductDate = item.DATE;
+                    description.ProductType = item.ProductType;
+                    description.ProductCount = item.COUNT;
+                    description.ProductPrice = item.PRICE;
+                    description.Show();
+                    PList_flowLayoutPanel.Controls.Add(description);
+
+                };
+
             }
 
         }
 
         private void Directory_Load(object sender, EventArgs e)
         {
+            if (this.PList_flowLayoutPanel.Controls.Count > 0)
+                this.PList_flowLayoutPanel.Controls.RemoveAt(0);
+
             foreach (var item in Product.GetAllProducts())
             {
                 Product_Card card = new Product_Card();
