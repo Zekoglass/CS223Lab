@@ -20,17 +20,18 @@ namespace sqlconn
 
         private void ADD_Click(object sender, EventArgs e)
         {
-            string Email = uName.Text;
+            //string Email = uName.Text;
             //string Password = pWord.Text;
 
             if ((this.uName.Text == "Admin") && (this.pWord.Text == "Admin"))
             {
                 this.Hide();
-                Main form = new Main(Email);
+                Directory form =new Directory();
+                //Main form = new Main(Email);
                 // Form1 form = new Form1(Email);
                 //MessageBox.Show("you are granted access");
-                form.ShowDialog();
-
+                //form.ShowDialog();
+                form.Show();
 
             }
             else
