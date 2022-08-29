@@ -37,8 +37,10 @@
             this.add_ProductButton = new System.Windows.Forms.Button();
             this.panel_Mid = new System.Windows.Forms.Panel();
             this.PList_flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.product_Card1 = new sqlconn.Product_Card();
             this.panel1.SuspendLayout();
             this.panel_Mid.SuspendLayout();
+            this.PList_flowLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -123,10 +125,21 @@
             // 
             // PList_flowLayoutPanel
             // 
+            this.PList_flowLayoutPanel.Controls.Add(this.product_Card1);
             this.PList_flowLayoutPanel.Location = new System.Drawing.Point(143, 61);
             this.PList_flowLayoutPanel.Name = "PList_flowLayoutPanel";
             this.PList_flowLayoutPanel.Size = new System.Drawing.Size(364, 377);
             this.PList_flowLayoutPanel.TabIndex = 0;
+            // 
+            // product_Card1
+            // 
+            this.product_Card1.Location = new System.Drawing.Point(3, 3);
+            this.product_Card1.Name = "product_Card1";
+            this.product_Card1.ProductDescription = null;
+            this.product_Card1.Productname = null;
+            this.product_Card1.ProductPrice = null;
+            this.product_Card1.Size = new System.Drawing.Size(217, 178);
+            this.product_Card1.TabIndex = 0;
             // 
             // Directory
             // 
@@ -140,6 +153,7 @@
             this.Load += new System.EventHandler(this.Directory_Load);
             this.panel1.ResumeLayout(false);
             this.panel_Mid.ResumeLayout(false);
+            this.PList_flowLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -155,5 +169,6 @@
         private System.Windows.Forms.Button add_ProductButton;
         private System.Windows.Forms.Panel panel_Mid;
         private System.Windows.Forms.FlowLayoutPanel PList_flowLayoutPanel;
+        private Product_Card product_Card1;
     }
 }
