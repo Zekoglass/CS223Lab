@@ -90,6 +90,7 @@
             this.n.Size = new System.Drawing.Size(71, 20);
             this.n.TabIndex = 2;
             this.n.Text = "Number";
+            this.n.Click += new System.EventHandler(this.n_Click);
             // 
             // D
             // 
@@ -100,6 +101,7 @@
             this.D.Size = new System.Drawing.Size(40, 16);
             this.D.TabIndex = 3;
             this.D.Text = "Date";
+            this.D.Click += new System.EventHandler(this.D_Click);
             // 
             // I
             // 
@@ -110,6 +112,7 @@
             this.I.Size = new System.Drawing.Size(150, 20);
             this.I.TabIndex = 4;
             this.I.Text = "Inventory Number";
+            this.I.Click += new System.EventHandler(this.I_Click);
             // 
             // O
             // 
@@ -120,6 +123,7 @@
             this.O.Size = new System.Drawing.Size(112, 20);
             this.O.TabIndex = 5;
             this.O.Text = "Object Name";
+            this.O.Click += new System.EventHandler(this.O_Click);
             // 
             // C
             // 
@@ -130,6 +134,7 @@
             this.C.Size = new System.Drawing.Size(57, 20);
             this.C.TabIndex = 6;
             this.C.Text = "Count";
+            this.C.Click += new System.EventHandler(this.C_Click);
             // 
             // P
             // 
@@ -140,6 +145,7 @@
             this.P.Size = new System.Drawing.Size(49, 20);
             this.P.TabIndex = 7;
             this.P.Text = "Price";
+            this.P.Click += new System.EventHandler(this.P_Click);
             // 
             // numberrr
             // 
@@ -147,6 +153,7 @@
             this.numberrr.Name = "numberrr";
             this.numberrr.Size = new System.Drawing.Size(176, 20);
             this.numberrr.TabIndex = 8;
+            this.numberrr.TextChanged += new System.EventHandler(this.numberrr_TextChanged);
             // 
             // inv_numberrr
             // 
@@ -154,6 +161,7 @@
             this.inv_numberrr.Name = "inv_numberrr";
             this.inv_numberrr.Size = new System.Drawing.Size(200, 20);
             this.inv_numberrr.TabIndex = 9;
+            this.inv_numberrr.TextChanged += new System.EventHandler(this.inv_numberrr_TextChanged);
             // 
             // obj_nameee
             // 
@@ -161,6 +169,7 @@
             this.obj_nameee.Name = "obj_nameee";
             this.obj_nameee.Size = new System.Drawing.Size(176, 20);
             this.obj_nameee.TabIndex = 10;
+            this.obj_nameee.TextChanged += new System.EventHandler(this.obj_nameee_TextChanged);
             // 
             // Counttt
             // 
@@ -168,6 +177,7 @@
             this.Counttt.Name = "Counttt";
             this.Counttt.Size = new System.Drawing.Size(176, 20);
             this.Counttt.TabIndex = 11;
+            this.Counttt.TextChanged += new System.EventHandler(this.Counttt_TextChanged);
             // 
             // priceee
             // 
@@ -175,6 +185,7 @@
             this.priceee.Name = "priceee";
             this.priceee.Size = new System.Drawing.Size(201, 20);
             this.priceee.TabIndex = 12;
+            this.priceee.TextChanged += new System.EventHandler(this.priceee_TextChanged);
             // 
             // dateee
             // 
@@ -182,6 +193,7 @@
             this.dateee.Name = "dateee";
             this.dateee.Size = new System.Drawing.Size(200, 20);
             this.dateee.TabIndex = 13;
+            this.dateee.ValueChanged += new System.EventHandler(this.dateee_ValueChanged);
             // 
             // errorProvider1
             // 
@@ -195,6 +207,7 @@
             this.dgview.Name = "dgview";
             this.dgview.Size = new System.Drawing.Size(488, 163);
             this.dgview.TabIndex = 14;
+            this.dgview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgview_CellContentClick);
             // 
             // cLBProductC
             // 
@@ -208,6 +221,7 @@
             this.cLBProductC.Name = "cLBProductC";
             this.cLBProductC.Size = new System.Drawing.Size(116, 64);
             this.cLBProductC.TabIndex = 15;
+            this.cLBProductC.SelectedIndexChanged += new System.EventHandler(this.cLBProductC_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -218,6 +232,7 @@
             this.label1.Size = new System.Drawing.Size(127, 16);
             this.label1.TabIndex = 16;
             this.label1.Text = "Product Catagory";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // gBoxPType
             // 
@@ -274,6 +289,7 @@
             this.gBoxAva.TabIndex = 19;
             this.gBoxAva.TabStop = false;
             this.gBoxAva.Text = "Availability";
+            this.gBoxAva.Enter += new System.EventHandler(this.gBoxAva_Enter);
             // 
             // current_user
             // 

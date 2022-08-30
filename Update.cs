@@ -4,33 +4,25 @@ using System.Windows.Forms;
 
 namespace sqlconn
 {
-    public partial class Form1 : Form
+    public partial class Update : Form
     {
-        
-        public Form1()
+        public Update()
         {
             InitializeComponent();
         }
-        public Form1(string NAME)
+
+        private void ShowButton_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
-            current_user.Text = NAME;
+
+            dgview.DataSource = null;
+            dgview.DataSource = Product.GetAllProducts();
+
+
+            
         }
 
-        private void Add_Click(object sender, EventArgs e)
+        private void updateButton_Click(object sender, EventArgs e)
         {
-            /*Product p = new Product();
-            p.NUMBER = Convert.ToDouble(numberrr.Text);
-            p.INVO_NUM = Convert.ToDouble(inv_numberrr.Text);
-            p.OBJ_NAME = Convert.ToString( obj_nameee.Text);
-            p.DATE =Convert.ToDateTime( dateee.Value);
-            p.PRICE = Convert.ToDouble(priceee.Text);
-            p.COUNT = Convert.ToDouble(Counttt.Text);
-            p.isAvailable =Convert.ToBoolean( cBisAva.Checked);
-            p.add();
-            */
-
-
             Product p = new Product();
             Regex rxForInventoryNumber = new Regex(@"^[0-9]{6}$");
 
@@ -118,117 +110,25 @@ namespace sqlconn
 
             if (allFieldsAreCorrect == true)
             {
-                int numberOfRowAffected = p.add();
+                int numberOfRowAffected = p.update();
                 if (numberOfRowAffected == 1)
                 {
-                    MessageBox.Show($"Product is Saved Sucessfully.");
+                    MessageBox.Show($"Product is updated Sucessfully.");
                 }
 
-                
+
                 dgview.DataSource = null;
                 dgview.DataSource = Product.GetAllProducts();
 
             }
+        }
 
-
-
-
-
-
-
-
-
-
-
+        private void Update_Load(object sender, EventArgs e)
+        {
 
         }
 
         private void Cancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cLBProductC_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgview_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dateee_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void priceee_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Counttt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void obj_nameee_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void inv_numberrr_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numberrr_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void P_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void C_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void O_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void I_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void D_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void n_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gBoxAva_Enter(object sender, EventArgs e)
         {
 
         }

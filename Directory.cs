@@ -41,12 +41,27 @@ namespace sqlconn
             panel_Mid.BackColor = Color.DarkOliveGreen;
             Indicater_panel.Location = new Point(Indicater_panel.Location.X, 173);
 
+
+            Update product = new Update();
+            product.TopLevel = false;
+            this.PList_flowLayoutPanel.Controls.Add(product);
+            this.PList_flowLayoutPanel.Tag = product;
+            product.Show();
+
+
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             panel_Mid.BackColor = Color.Red;
             Indicater_panel.Location = new Point(Indicater_panel.Location.X, 224);
+            Delete product = new Delete();
+            product.TopLevel = false;
+            this.PList_flowLayoutPanel.Controls.Add(product);
+            this.PList_flowLayoutPanel.Tag = product;
+            product.Show();
+
+
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -91,7 +106,7 @@ namespace sqlconn
                     description.ProductDate = item.DATE;
                     description.ProductType = item.ProductType;
                     description.ProductCount = item.COUNT;
-                    description.ProductPrice = item.PRICE;
+                    description.ProductPrice = (double)Convert.ToDecimal(item.PRICE);
                     description.Show();
                     PList_flowLayoutPanel.Controls.Add(description);
 

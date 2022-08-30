@@ -46,6 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="connection.cs" />
+    <Compile Include="connectToSql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="connectToSql.Designer.cs">
+      <DependentUpon>connectToSql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete.Designer.cs">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Directory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +104,18 @@
     <Compile Include="Search.Designer.cs">
       <DependentUpon>Search.cs</DependentUpon>
     </Compile>
+    <Compile Include="Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="connectToSql.resx">
+      <DependentUpon>connectToSql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Directory.resx">
       <DependentUpon>Directory.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +145,9 @@
     </Compile>
     <EmbeddedResource Include="Search.resx">
       <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
